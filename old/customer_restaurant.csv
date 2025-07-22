@@ -1,0 +1,13 @@
+Sample,Alternative,Friday,Hungry,Occupancy,Price,Rain,Reserved,WAIT
+1,1,0,1,Some,Expensive,0,1,1
+2,1,0,1,Full,Cheap,0,0,0
+3,0,0,0,Some,Cheap,0,0,1
+4,1,1,1,Full,Cheap,0,0,1
+5,1,1,0,Full,Expensive,0,1,0
+6,0,0,1,Some,Moderate,1,1,1
+7,0,0,0,None,Cheap,1,0,0
+8,0,0,1,Some,Moderate,1,1,1
+9,0,1,0,Full,Cheap,1,0,0
+10,1,1,1,Full,Expensive,0,1,0
+11,0,0,0,None,Cheap,0,0,0
+12,1,1,1,Full,Cheap,0,0,1
