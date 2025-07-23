@@ -3,12 +3,19 @@
 1) Case study of the following deep learning packages:
 
     - tensorflow
+
     - keras
+
     - theano
+
     - pytorch
+
     - lasagne
+
     - scikitlearn
+
     - microsoft cntk (cognitive toolkit)
+
     - MXNet
 
 2) design a single unit percepton for classifying linearly separable binary datasets without using any predefined models.
