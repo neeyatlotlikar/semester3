@@ -1,10 +1,21 @@
 # Deep Learning Lab Experiments
 
-1) design a single unit percepton for classifying linearly separable binary datasets without using any predefined models.
+1) Case study of the following deep learning packages:
 
-2) identify problems with single perceptron and implement classification or, and, xor.
+    - tensorflow
+    - keras
+    - theano
+    - pytorch
+    - lasagne
+    - scikitlearn
+    - microsoft cntk (cognitive toolkit)
+    - MXNet
 
-3) build an ann by implementing backpropagation algorithm using various activation functions and compare them.
+2) design a single unit percepton for classifying linearly separable binary datasets without using any predefined models.
+
+3) identify problems with single perceptron and implement classification or, and, xor.
+
+4) build an ann by implementing backpropagation algorithm using various activation functions and compare them.
 
 implement perceptron
 

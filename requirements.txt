@@ -16,6 +16,7 @@ numpy==2.3.1
     # via
     #   contourpy
     #   matplotlib
+    #   scipy
 packaging==25.0
     # via matplotlib
 pillow==11.3.0
@@ -24,5 +25,7 @@ pyparsing==3.2.3
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via matplotlib
+scipy==1.16.0
+    # via -r requirements.in
 six==1.17.0
     # via python-dateutil
