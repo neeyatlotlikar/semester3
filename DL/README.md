@@ -18,7 +18,11 @@
 
     - MXNet
 
+    Lab conducted on 23/07/2025.
+
 2) design a single unit percepton for classifying linearly separable binary datasets without using any predefined models.
+
+    Expected for lab on 30/07/2025.
 
 3) identify problems with single perceptron and implement classification or, and, xor.
 
