@@ -42,6 +42,57 @@ def pearson_correlation(user_ratings, other_user_ratings):
     return numerator / denominator
 
 
+def predict_rating(
+    user_ratings: dict[str, float], sorted_users: list[tuple[str, float]]
+):
+    """
+    Predict the rating a user would give to an item based on their ratings and similar users.
+
+    :param user_ratings: Ratings of the user.
+    :param item: Item for which the rating is to be predicted.
+    :return: Predicted rating for the item.
+    """
+    recommendations = {}
+
+    # Unrated items
+    all_items = set(item_ratings.keys() for item_ratings in rating_matrix.values())
+    print(f"All items: {all_items}")
+    unrated_items = all_items - set(user_ratings.keys())
+    print(f"Unrated items for user: {unrated_items}")
+
+    user_items = set(user_ratings.keys())
+
+    n = len(user_items)
+    mean_x = sum(user_ratings[item] for item in user_items) / n
+
+    sim_sum = sum(sim for _, sim in sorted_users if sim > 0)
+
+    for item in unrated_items:
+        recommendations[item] = mean_x + (
+            sum(
+                (sim * item_rating - mean_y)
+                for user, sim in sorted_users
+            )
+            / sum(abs(sim) for _, sim in sorted_users if sim > 0)
+        )
+
+    for other_user, _ in sorted_users:
+        if other_user not in rating_matrix:
+            continue
+
+
+        # find current other user's similarity score
+        similarity_score = next(
+            (sim for user, sim in sorted_users if user == other_user), 0
+        )
+
+        for item, rating in rating_matrix[other_user].items():
+            if item not in user_ratings and rating > 0:
+                pass
+
+    return recommendations
+
+
 def get_user_collaborative_filter(
     user_id: str, rating_matrix: dict[str, dict[str, int]]
 ) -> list[tuple[str, int]]:
@@ -69,15 +120,8 @@ def get_user_collaborative_filter(
     sorted_users = sorted(similar_users.items(), key=lambda x: x[1], reverse=True)[:2]
     print(f"Similar users for {user_id}: {sorted_users}")
 
-    recommendations = {}
-
     # Aggregate recommendations from similar users
-    for other_user, _ in sorted_users:
-        for item, rating in rating_matrix[other_user].items():
-            if item not in user_ratings and rating > 0:
-                if item not in recommendations:
-                    recommendations[item] = 0
-                recommendations[item] += rating
+    recommendations = predict_rating(user_ratings, sorted_users)
 
     # Sort recommendations by aggregated score
     recommended_items = sorted(
