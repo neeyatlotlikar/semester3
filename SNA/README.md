@@ -2,10 +2,13 @@
 
 1) Python Networkx Library Study
 
+2) Various tools for analysing social networks using R.
+
+    i graph, g-graph, factoMineR and intergraph in R
+
 more on tools like gephi, ucinet, pajek, nodexl
 metric degree of centrality, betweenness cent, closeness cent and density, and cluster coeff
 cryptoscope, netlytic
-i graph, g-graph, factoMineR and intergraph in R
 
 ego net analysis, whole net, two-node net, dynamic networks (temporal), multiplex, wighted, signed, bipartite
 

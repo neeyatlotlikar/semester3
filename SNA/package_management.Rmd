@@ -1,0 +1,52 @@
+---
+title: "package_management"
+output: html_document
+---
+
+In R, when you load a library, it may mask functions or objects from previously loaded libraries or the base environment if they share the same name. To avoid or handle this, you can use the following strategies:
+
+1. Use Explicit Namespace
+
+Always specify the package name explicitly when calling a function to avoid ambiguity. For example:
+
+```
+dplyr::filter(data, condition)
+stats::filter(data)
+```
+
+This ensures you're using the function from the intended package.
+
+2. Load Libraries in a Specific Order
+
+Load the library with the desired function last. For example:
+
+```
+library(dplyr)
+library(xgboost)  # If xgboost masks dplyr functions, load it after dplyr.
+```
+
+However, this is not foolproof and can still lead to confusion.
+
+3. Detach the Masking Package
+
+If a package is masking functions you need, you can detach it:
+
+```
+detach("package:xgboost", unload = TRUE)
+```
+
+This removes the package from the search path, resolving conflicts.
+
+4. Avoid Loading the Entire Library
+
+Instead of loading the entire library with `library()`, use `::` to access specific functions without attaching the package:
+
+```
+xgboost::xgb.train(params, data)
+```
+
+5. Check for Masking Warnings
+
+When loading a library, R often warns about masked functions. Pay attention to these messages to identify potential conflicts.
+
+By following these practices, you can minimize issues caused by masking and ensure your code behaves as expected.
