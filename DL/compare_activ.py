@@ -48,7 +48,7 @@ class ANN:
     def forward(self, X):
         # input to hidden layer
         self.z1 = X @ self.w1 + self.b1
-        # hidden layer activation
+        # hidden layer activation (output)
         self.a1 = self.activation(self.z1)
         # hidden layer output to next layer
         self.z2 = self.a1 @ self.w2 + self.b2
@@ -59,10 +59,10 @@ class ANN:
     def backward(self, X, y):
         # Backpropagation
         output_error = y - self.a2
-        output_delta = output_error * sigmoid_deriv(self.z2)
+        output_delta = output_error * sigmoid_deriv(self.z2)  # gradient of output layer
         # Calculate hidden layer error
         hidden_error = output_delta @ self.w2.T
-        hidden_delta = hidden_error * self.activation_deriv(self.z1)
+        hidden_delta = hidden_error * self.activation_deriv(self.z1)  # gradient of hidden layer
 
         # Update weights
         self.w2 += self.a1.T @ output_delta * self.lr
