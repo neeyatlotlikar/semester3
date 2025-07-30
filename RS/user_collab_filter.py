@@ -55,40 +55,34 @@ def predict_rating(
     recommendations = {}
 
     # Unrated items
-    all_items = set(item_ratings.keys() for item_ratings in rating_matrix.values())
+    all_items = set(item for item_ratings in rating_matrix.values() for item in item_ratings.keys())
     print(f"All items: {all_items}")
-    unrated_items = all_items - set(user_ratings.keys())
+    unrated_items = set(all_items) - set(user_ratings.keys())
     print(f"Unrated items for user: {unrated_items}")
 
     user_items = set(user_ratings.keys())
 
     n = len(user_items)
     mean_x = sum(user_ratings[item] for item in user_items) / n
+    sim_sum = sum(abs(sim) for _, sim in sorted_users if sim > 0)
 
-    sim_sum = sum(sim for _, sim in sorted_users if sim > 0)
-
-    for item in unrated_items:
-        recommendations[item] = mean_x + (
-            sum(
-                (sim * item_rating - mean_y)
-                for user, sim in sorted_users
-            )
-            / sum(abs(sim) for _, sim in sorted_users if sim > 0)
-        )
-
-    for other_user, _ in sorted_users:
-        if other_user not in rating_matrix:
+    for similar_user, sim in sorted_users:
+        if similar_user not in rating_matrix:
             continue
 
+        item_ratings = rating_matrix[similar_user]
+        mean_y = sum(item_ratings[item] for item in unrated_items if item in item_ratings) / n
 
-        # find current other user's similarity score
-        similarity_score = next(
-            (sim for user, sim in sorted_users if user == other_user), 0
-        )
+        for item, item_rating in item_ratings.items():
+            if item not in user_ratings and item_rating > 0:
+                if item not in recommendations:
+                    recommendations[item] = mean_x
 
-        for item, rating in rating_matrix[other_user].items():
-            if item not in user_ratings and rating > 0:
-                pass
+                recommendations[item] += sim * (item_rating - mean_y)
+
+    # Normalize recommendations
+    for item in recommendations:
+        recommendations[item] /= sim_sum if sim_sum > 0 else 1
 
     return recommendations
 
