@@ -62,7 +62,9 @@ class ANN:
         output_delta = output_error * sigmoid_deriv(self.z2)  # gradient of output layer
         # Calculate hidden layer error
         hidden_error = output_delta @ self.w2.T
-        hidden_delta = hidden_error * self.activation_deriv(self.z1)  # gradient of hidden layer
+        hidden_delta = hidden_error * self.activation_deriv(
+            self.z1
+        )  # gradient of hidden layer
 
         # Update weights
         self.w2 += self.a1.T @ output_delta * self.lr

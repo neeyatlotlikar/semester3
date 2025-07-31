@@ -55,7 +55,9 @@ def predict_rating(
     recommendations = {}
 
     # Unrated items
-    all_items = set(item for item_ratings in rating_matrix.values() for item in item_ratings.keys())
+    all_items = set(
+        item for item_ratings in rating_matrix.values() for item in item_ratings.keys()
+    )
     print(f"All items: {all_items}")
     unrated_items = set(all_items) - set(user_ratings.keys())
     print(f"Unrated items for user: {unrated_items}")
@@ -71,7 +73,10 @@ def predict_rating(
             continue
 
         item_ratings = rating_matrix[similar_user]
-        mean_y = sum(item_ratings[item] for item in unrated_items if item in item_ratings) / n
+        mean_y = (
+            sum(item_ratings[item] for item in unrated_items if item in item_ratings)
+            / n
+        )
 
         for item, item_rating in item_ratings.items():
             if item not in user_ratings and item_rating > 0:
