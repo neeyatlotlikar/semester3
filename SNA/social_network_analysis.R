@@ -3,6 +3,7 @@ install.packages("igraph")
 install.packages("ggraph")
 install.packages("FactoMineR")
 install.packages("intergraph")
+install.packages("sna")
 
 # basic metrics
 library(igraph)
@@ -124,3 +125,47 @@ res.pca <- PCA(data, quali.sup=3, graph=TRUE)
 # Subgraph Extraction
 sub_g <- induced_subgraph(g, V(g)$group == "TeamA")
 print(sub_g)
+
+
+library(sna)
+
+# Adjacency matrix for an undirected network
+adj <- matrix(c(
+  0, 1, 0, 1, 
+  1, 0, 1, 0, 
+  0, 1, 0, 1, 
+  1, 0, 1, 0
+), nrow=4, byrow=TRUE)
+
+#Centrality Measures
+
+degree_centrality <- degree(adj, gmode="graph")  # undirected graph
+print(degree_centrality)
+
+betweenness_centrality <- betweenness(adj, gmode="graph")
+print(betweenness_centrality)
+
+closeness_centrality <- closeness(adj, gmode="graph")
+print(closeness_centrality)
+
+eigen_centrality <- evcent(adj, gmode="graph")
+print(eigen_centrality)
+
+# Graph-Level Properties
+
+net_density <- gden(adj)
+print(net_density)
+
+clustering_coeff <- gtrans(adj)
+print(clustering_coeff)
+
+gplot(adj, displaylabels=TRUE)
+
+# draw a dendrogram based on node similarity
+struct_equiv <- equiv.clust(adj)
+plot(struct_equiv)
+
+# generate a random network
+random_net <- rgraph(7, tprob=0.5, mode="digraph")
+gplot(random_net)
+
