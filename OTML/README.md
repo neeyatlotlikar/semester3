@@ -1,14 +1,14 @@
 # Optimization Techniques for Machine Learning Lab Experiments
 
-1) Implement Gradient Descent: 24/07/2025
+1) Implement Gradient Descent (Date: 24/07/2025)
 
     On 31/07/2025, [Gradient Descent](https://medium.com/data-science/complete-step-by-step-gradient-descent-algorithm-from-scratch-acba013e8420)
 
-2) Comparison of Activation Functions (Sigmoid, ReLU, tanh)
+2) Comparison of Activation Functions (Sigmoid, ReLU, tanh) (Date: 07/08/2025)
 
-3) Stochastic Gradient Descent: 14/08/2025
+3) Stochastic Gradient Descent (Date: 14/08/2025)
 
-4) Minibatch
+4) Minibatch (Date: 21/08/2025)
 
 5) Non-convex optimization
 
