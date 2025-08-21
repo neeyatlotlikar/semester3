@@ -86,5 +86,13 @@
 
    ### 🧠 Why These Models Matter
 
-   - They help explain phenomena like viral content spread, academic citation patterns, and the emergence of hubs in social networks.
+   - They help expla in phenomena like viral content spread, academic citation patterns, and the emergence of hubs in social networks.
    - They’re foundational in fields like network science, epidemiology, and data science.
+
+4. ## Social Network Data Collection
+
+   Program to illustrate mechanism for collecting social networking data for different types of apps/networks (Ego networks and whole netowrks). Date: 21/08/2025
+
+5. ## Social Media Data Processing
+
+   Collect, analyze and aggregate social media data of twitter using python.
