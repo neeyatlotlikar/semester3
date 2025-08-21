@@ -19,7 +19,13 @@
    Udemy - SNA using R
    Videos: SNA with R by Dr. Bharatendra Rai, Tanmay Bhattacharya - SNA book
 
-3. ## Growth Models
+3. ## Measures for Representing Social Networks
+
+   Implementation of various measures for representing social networks. (Date: 12/08/2025)
+
+4. ## Growth Models
+
+   Implementation of various network growth models (Date: 29/08/2025)
 
    Network growth models are mathematical frameworks used to understand how networks evolve over time by adding nodes and edges. Here are some of the most fundamental models:
 
@@ -89,10 +95,10 @@
    - They help expla in phenomena like viral content spread, academic citation patterns, and the emergence of hubs in social networks.
    - They’re foundational in fields like network science, epidemiology, and data science.
 
-4. ## Social Network Data Collection
+5. ## Social Network Data Collection
 
    Program to illustrate mechanism for collecting social networking data for different types of apps/networks (Ego networks and whole netowrks). Date: 21/08/2025
 
-5. ## Social Media Data Processing
+6. ## Social Media Data Processing
 
    Collect, analyze and aggregate social media data of twitter using python.
