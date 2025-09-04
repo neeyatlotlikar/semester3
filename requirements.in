@@ -2,3 +2,5 @@ networkx
 matplotlib
 scipy
 ipykernel
+tweepy
+python-dotenv

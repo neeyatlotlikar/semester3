@@ -97,8 +97,9 @@
 
 5. ## Social Network Data Collection
 
-   Program to illustrate mechanism for collecting social networking data for different types of apps/networks (Ego networks and whole netowrks). Date: 21/08/2025
+   Program to illustrate mechanism for collecting social networking data for different types of apps/networks (Ego networks and whole networks). Date: 21/08/2025
 
 6. ## Social Media Data Processing
 
    Collect, analyze and aggregate social media data of twitter using python.
+   Date: 04/09/2025

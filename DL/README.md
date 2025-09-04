@@ -39,3 +39,5 @@ radial basis function nn
 cnn
 
 rnn (long short term memory)
+
+Reference: <https://vlab.spit.ac.in/ai/#/experiments>

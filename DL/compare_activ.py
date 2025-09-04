@@ -85,6 +85,8 @@ class ANN:
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 Y = np.array([[0], [1], [1], [0]])
 
+# TODO: Take large input in and learn the y. Then predict for testing. (XOR data is too limited for NN to predict correctly.)
+
 ann_sigmoid = ANN(act="sigmoid")
 ann_sigmoid.train(X, Y)
 ann_relu = ANN(act="relu")
