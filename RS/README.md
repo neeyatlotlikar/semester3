@@ -5,3 +5,5 @@
 2. `user_item_int_matrix.ipynb`: Implement User-Item Interaction Matrix Creation. (11/08/25)
 
 3. `item_collab_filter.ipynb`: To implement and evaluate an item-based collaborative filtering algorithm. (19/08/25)
+
+4. `svd_recommend.ipynb`: To implement a recommender system using Singular Value Decomposition (SVD) on a user-item rating matrix and evaluate its performance using RMSE. (16/09/25)

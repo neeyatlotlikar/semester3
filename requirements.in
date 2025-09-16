@@ -4,3 +4,4 @@ scipy
 ipykernel
 tweepy
 python-dotenv
+scikit-learn

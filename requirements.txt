@@ -30,6 +30,8 @@ ipython-pygments-lexers==1.1.1
     # via ipython
 jedi==0.19.2
     # via ipython
+joblib==1.5.2
+    # via scikit-learn
 jupyter-client==8.6.3
     # via ipykernel
 jupyter-core==5.8.1
@@ -48,10 +50,11 @@ nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.5
     # via -r requirements.in
-numpy==2.3.2
+numpy==2.3.3
     # via
     #   contourpy
     #   matplotlib
+    #   scikit-learn
     #   scipy
 oauthlib==3.3.1
     # via
@@ -81,7 +84,7 @@ pygments==2.19.2
     # via
     #   ipython
     #   ipython-pygments-lexers
-pyparsing==3.2.3
+pyparsing==3.2.4
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via
@@ -89,7 +92,7 @@ python-dateutil==2.9.0.post0
     #   matplotlib
 python-dotenv==1.1.1
     # via -r requirements.in
-pyzmq==27.0.2
+pyzmq==27.1.0
     # via
     #   ipykernel
     #   jupyter-client
@@ -99,12 +102,18 @@ requests==2.32.5
     #   tweepy
 requests-oauthlib==2.0.0
     # via tweepy
-scipy==1.16.1
+scikit-learn==1.7.2
     # via -r requirements.in
+scipy==1.16.2
+    # via
+    #   -r requirements.in
+    #   scikit-learn
 six==1.17.0
     # via python-dateutil
 stack-data==0.6.3
     # via ipython
+threadpoolctl==3.6.0
+    # via scikit-learn
 tornado==6.5.2
     # via
     #   ipykernel
