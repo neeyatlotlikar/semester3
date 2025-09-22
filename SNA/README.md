@@ -108,3 +108,22 @@
 
    Visualizing online social networks using tools/libraries
    Date: 18/09/2025
+
+8. ## Random walks and their applications
+
+   Random walks and their applications.
+   Date: 22/09/2025
+
+   Random walks are a fundamental mathematical tool used to extract information from the structure of complex networks, including social networks. They model the stochastic movement of a walker from one node to another, and their behavior can reveal important properties about the network, such as node centrality, community structure, and the flow of information or influence.
+   In social network analysis, random walks are particularly valuable for tasks like ranking entities, identifying influential individuals, and detecting communities.
+
+   One of the most well-known applications is Google's PageRank algorithm, which uses a personalized random walk to rank web pages based on their importance within the network.
+   This concept extends to social networks for tasks like friend suggestion, where the similarity between users is measured by the likelihood of a random walk connecting them.
+   Random walks also underpin various centrality measures, such as betweenness centrality based on the frequency with which a node is traversed by a random walk between other nodes, providing a more nuanced view than traditional shortest-path methods.
+
+   Beyond ranking and centrality, random walks are applied in community detection. By analyzing the probability flow of random walks, researchers can identify densely connected groups or communities within a network, which is crucial for understanding the multipartite organization of social systems.
+   They are also used in semi-supervised learning and network embedding, where the walk patterns help represent nodes in a lower-dimensional space while preserving structural relationships.
+
+   Recent research has explored the use of random walks in more complex scenarios, such as analyzing multilayer networks to identify leaders in criminal networks, where classical and quantum random walks are used to define new centrality metrics based on node occupation.
+   Furthermore, random walks are integral to recommendation systems, where biased random walks can incorporate social influence and user preferences to improve recommendation accuracy and mitigate cold-start problems.
+   Despite their utility, random walks can be vulnerable to adversarial attacks, such as link deletion or addition, which can significantly alter the hitting time (time to reach a target node) and cover time (time to explore the entire network), highlighting the need for robust algorithms.
