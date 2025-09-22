@@ -127,3 +127,8 @@
    Recent research has explored the use of random walks in more complex scenarios, such as analyzing multilayer networks to identify leaders in criminal networks, where classical and quantum random walks are used to define new centrality metrics based on node occupation.
    Furthermore, random walks are integral to recommendation systems, where biased random walks can incorporate social influence and user preferences to improve recommendation accuracy and mitigate cold-start problems.
    Despite their utility, random walks can be vulnerable to adversarial attacks, such as link deletion or addition, which can significantly alter the hitting time (time to reach a target node) and cover time (time to explore the entire network), highlighting the need for robust algorithms.
+
+9. ## ontological representation of social individuals and relationships
+
+   Aim: Implementation of ontological representation of social individuals and relationships.
+   Date: 22/09/2025 (tentative)
