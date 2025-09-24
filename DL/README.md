@@ -1,5 +1,7 @@
 # Deep Learning Lab Experiments
 
+Reference: <https://vlab.spit.ac.in/ai/#/experiments>
+
 1) Case study of the following deep learning packages:
 
     - tensorflow
@@ -26,7 +28,12 @@
 
 3) identify problems with single perceptron and implement classification or, and, xor.
 
-4) build an ann by implementing backpropagation algorithm using various activation functions and compare them.
+4) SVM
+
+    This experiment is about Support Vector Machine which analyzes data for classification and regression analysis
+    Date: 24/09/2024
+
+build an ann by implementing backpropagation algorithm using various activation functions and compare them.
 
 implement perceptron
 
@@ -39,5 +46,3 @@ radial basis function nn
 cnn
 
 rnn (long short term memory)
-
-Reference: <https://vlab.spit.ac.in/ai/#/experiments>
