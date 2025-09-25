@@ -132,3 +132,8 @@
 
    Aim: Implementation of ontological representation of social individuals and relationships.
    Date: 22/09/2025 (tentative)
+
+10. ## Page Rank Algorithm
+
+   Aim: Implementation of Page Rank Algorithms (Link Analysis).
+   Date: 25/09/2025
