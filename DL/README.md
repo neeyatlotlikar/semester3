@@ -33,6 +33,10 @@ Reference: <https://vlab.spit.ac.in/ai/#/experiments>
     This experiment is about Support Vector Machine which analyzes data for classification and regression analysis
     Date: 24/09/2024
 
+5) YOLO
+    <https://www.analyticsvidhya.com/blog/2018/12/practical-guide-object-detection-yolo-framewor-python/>
+    Date: 08/10/25
+
 build an ann by implementing backpropagation algorithm using various activation functions and compare them.
 
 implement perceptron
