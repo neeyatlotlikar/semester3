@@ -12,7 +12,7 @@
 
 5) Newton method and quasi-Newton optimization
 
-6) Co-ordinate descent
+6) Co-ordinate descent (Date: 27/10/25)
 
 7) Lower bound for smooth and convex functions
 
