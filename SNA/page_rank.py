@@ -1,4 +1,3 @@
-# PageRank Implementation from Scratch and with NetworkX
 import networkx as nx
 
 
@@ -28,16 +27,13 @@ def pagerank_scratch(G, damping=0.85, max_iter=100, tol=1e-6):
     return ranks
 
 
-# Example Usage
 if __name__ == "__main__":
     # Create a sample directed graph
     G = nx.DiGraph()
     G.add_edges_from([("A", "B"), ("B", "C"), ("C", "A"), ("C", "D"), ("D", "B")])
 
-    # From-scratch calculation
     ranks_manual = pagerank_scratch(G)
     print("Manual PageRank:", ranks_manual)
 
-    # Using NetworkX's built-in PageRank
     ranks_nx = nx.pagerank(G, alpha=0.85)
     print("NetworkX PageRank:", ranks_nx)
