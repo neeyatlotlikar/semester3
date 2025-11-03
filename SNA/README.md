@@ -147,3 +147,8 @@
 
    Aim: Demonstration of cascading behaviour in social networks
    Date: 03/11/25
+
+   Code explained in brief
+      - The code uses an Erdos-Renyi random graph as the social network.
+      - Blue nodes are those who have adopted the new behavior ("A"), red nodes retain the old ("B").
+      - Initial adopters (nodes 0 and 1) start the cascade.
