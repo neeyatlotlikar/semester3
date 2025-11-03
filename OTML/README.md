@@ -14,7 +14,7 @@
 
 6) Co-ordinate descent (Date: 27/10/25)
 
-7) Lower bound for smooth and convex functions
+7) Lower bound for smooth and convex functions (Date: 03/11/25)
 
 8) Lower bounds for non-smooth functions
 

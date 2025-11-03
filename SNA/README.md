@@ -135,5 +135,10 @@
 
 10. ## Page Rank Algorithm
 
-   Aim: Implementation of Page Rank Algorithms (Link Analysis).
-   Date: 25/09/2025
+      Aim: Implementation of Page Rank Algorithms (Link Analysis).
+      Date: 25/09/2025
+
+11. ## Detecting communities in social networks
+
+      Aim:  Detecting communities in social networks.
+      Date: 03/11/25
