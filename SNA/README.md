@@ -152,3 +152,24 @@
       - The code uses an Erdos-Renyi random graph as the social network.
       - Blue nodes are those who have adopted the new behavior ("A"), red nodes retain the old ("B").
       - Initial adopters (nodes 0 and 1) start the cascade.
+
+13. ## GraphML
+
+   Date: 06/11/2025
+
+   GraphML is a standard XML-based file format used for storing and exchanging graph data, making it widely applicable in social network analysis and graph machine learning.
+   It supports various graph types, including directed and undirected graphs, weighted and unweighted edges, and complex structures like multiple edges and nodes, which are essential for representing intricate social interactions.
+   Social media platforms such as Twitter generate vast amounts of graph-structured data, where users are nodes and interactions like retweets, likes, and replies form the edges, making them among the largest producers of such data.
+   These interactions can be modeled as large-scale complex graphs, enabling the application of graph machine learning (GraphML) techniques to uncover patterns and relationships.
+
+   GraphML facilitates the creation and analysis of social networks by allowing data to be stored in a structured format that can be imported into visualization and analysis tools like Gephi or NodeXL.
+   For instance, researchers and analysts can use tools such as NodeXL to collect Twitter data, create networks based on user interactions, and export the resulting graph to GraphML format for further analysis in Gephi.
+   This process enables the visualization of social networks, where nodes represent users and edges represent interactions such as mentions, replies, or retweets, with directed and weighted edges capturing the nature and frequency of these interactions.
+
+   Graph machine learning leverages these graph representations to perform tasks like community detection, link prediction, and node classification, which are crucial for understanding social dynamics.
+   For example, analyzing a network of Twitter users can reveal influential individuals or tightly connected communities, as demonstrated by studies using tools like Gephi to visualize and rank nodes by in-degree, indicating how frequently users are mentioned or engaged with.
+   Furthermore, GraphML supports advanced modeling using algorithms such as Graph Convolutional Networks (GCNs), Graph Attention Networks (GATs), and PageRank, which are used for tasks ranging from recommendation systems to detecting malicious behavior in social networks.
+
+   The dynamic nature of social networks, where interactions evolve over time, requires models that can handle streaming data and changing structures, a challenge that current research in graph neural networks continues to address.
+   By using GraphML to store and share graph data, researchers and developers can collaborate more effectively, ensuring interoperability across different platforms and tools.
+   Overall, GraphML serves as a foundational format for representing, analyzing, and visualizing social networks, enabling deeper insights into user behavior and network structures.
