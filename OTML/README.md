@@ -26,6 +26,16 @@
 
     In contrast, standard gradient descent (GD) achieves only a $$\mathcal{O}(1/T)$$ rate for smooth convex functions, meaning there is **room for improvement**. This gap is closed by accelerated methods such as **Nesterov’s acceleration**, which achieve the optimal $$\mathcal{O}(1/T^2)$$ convergence rate, matching the lower bound.
 
-8) Lower bounds for non-smooth functions
+8) Weight initialization methods and analyze their performance
 
-9) Lower bounds and accelerated gradient descent
+9) Implement Momentum based optimization
+
+10) Implement nesterov accelerated gradient
+
+11) apply adagrad to classification tasks and observe its performance.
+
+12) Mini-project demo and seminar
+
+- Lower bounds for non-smooth functions
+
+- Lower bounds and accelerated gradient descent
