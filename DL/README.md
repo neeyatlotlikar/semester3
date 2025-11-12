@@ -37,16 +37,22 @@ Reference: <https://vlab.spit.ac.in/ai/#/experiments>
     <https://www.analyticsvidhya.com/blog/2018/12/practical-guide-object-detection-yolo-framewor-python/>
     Date: 08/10/25
 
-build an ann by implementing backpropagation algorithm using various activation functions and compare them.
-
 implement perceptron
-
-ann
 
 feed forward nn
 
-radial basis function nn
-
-cnn
-
 rnn (long short term memory)
+
+cnn based recommender system
+
+gnn
+
+transfer learning with cnn or GAN
+
+lstm
+
+visualization and interpret attention mechanisms
+
+app to analyze various DNN architectures (study comparative)
+
+mini-project is the 10th experiment
